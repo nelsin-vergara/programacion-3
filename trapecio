@@ -1,0 +1,7 @@
+B=float(input("base mayor:"))
+b=float(input("base menor:"))
+h=float(input("altura:"))
+
+trapecio=((B+b)*h)/2
+
+print("el resultado es:"+str(trapecio))
