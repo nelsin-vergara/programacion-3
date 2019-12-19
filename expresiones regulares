@@ -1,0 +1,24 @@
+import re
+
+palabra = input("Digite una palabra: ")
+
+
+
+
+
+
+
+
+print(palabra)
+
+
+
+
+
+
+
+
+if re.match ('[A-Za-z_ÑñÁáÉéÍíÓóÚú ]+', palabra):
+    print("si coincide")
+else:
+    print("no coincidencia")
