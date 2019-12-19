@@ -1,0 +1,21 @@
+def traducir(diccionario):
+
+
+    input_usuario = input('Ingrese una frase: ')
+
+    while input_usuario != 'Quit':
+        traduccion = []
+        for palabra in input_usuario.split():
+            if palabra in diccionario.keys():
+                traduccion.append(diccionario[palabra])
+            else:
+                traduccion.append('__')
+
+        print(' '.join(traduccion))
+        input_usuario = input('Ingrese una frase: ')
+
+es_en = {'carro':'car', 'paraguas':'umbella', 'manzana':'apple', 'rojo':'red', 'mochila':'bag', 'casa ':'house', 'computadora':'computer',
+'trabajo':'job', 'mago':'witzar', 'zapatillas':'shoes', 'computadora':'computer', 'casa':'house', 'raton':'mouse', 'ciudad':'city', 
+'programación':'programming', 'universidad':'universty', 'edad':'age', 'ventana':'windows', 'perro':'dog', 'piso':'floor' }
+
+traducir(es_en)
